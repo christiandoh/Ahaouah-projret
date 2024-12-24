@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>AS Musique</title>
+    <link rel="stylesheet" href="">
+    <!-- Liens CSS et fonts identiques -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        body {
+            background-image: url('images/GR2.jpg');
+            background-size: cover; /* Assure que l'image couvre tout l'arrière-plan */
+            background-position: center; /* Centre l'image */
+            background-repeat: no-repeat; /* Évite la répétition de l'image */
+            background-attachment: fixed; /* L'image reste fixe lors du défilement */
+            padding-top: 56px; /* Ajoute une marge en haut de la page pour éviter que le contenu ne soit caché par la barre de navigation */
+            color: #0b0b0b; /* Texte global en blanc */
+
+        }
+       
+        .education-icon {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            .text-gradient {
+                background: linear-gradient(45deg, #3b82f6, #9333ea);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-clip: text;
+                background-clip: text;
+                background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+        .gradient-section {
+            background: linear-gradient(90deg, #3b82f6, #9333ea);
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            transition: all 0.3s ease;
+        }
+
+        .gradient-section:hover {
+            background: linear-gradient(90deg, #9333ea, #3b82f6);
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 300px;
+            margin: 0 auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: filter 0.3s ease;
+        }
+
+        .project-card:hover img {
+            filter: brightness(1.1);
+        }
+
+        .navbar {
+            transition: background-color 0.3s ease;
+            padding: 1rem;
+        }
+
+        .navbar-brand {
+            background: white;
+            background: -webkit-linear-gradient(45deg, #3b82f6, #9333ea);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .navbar-brand:hover {
+    background: -webkit-linear-gradient(45deg, #3b82f6, #9333ea);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Assurez-vous que la couleur par défaut est transparente */
+}
+
+
+        .navbar.scrolled {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link {
+            position: relative;
+            padding: 0.5rem 1rem;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: #3b82f6;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .filter-buttons {
+            margin-bottom: 2rem;
+        }
+
+        .filter-btn {
+            margin: 0.25rem;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            transform: scale(1.05);
+        }
+
+        #projectGrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .project-modal .modal-content {
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand animate__animated animate__fadeIn" href="index.html">Ahouah Koffi Séraphin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><strong>Accueil</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html"><strong>À propos</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artiste.html"><strong>Artistes</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><strong>Contact</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5 mt-5">
+        <h2 class="text-center mb-4 animate__animated animate__fadeInDown" style="color: #3b82f6;"><strong>Nos Artistes</strong></h2>
+        <div class="filter-buttons text-center">
+            <button class="btn btn-primary filter-btn active" data-filter="all">Tout</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="chant">Artistes</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="instrument">Instrumentistes</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="group">Groupes</button>
+        </div>
+        <div id="projectGrid"></div>
+    </div>
+
+    <div class="gradient-section animate__animated animate__fadeIn">
+        <h3 class="mb-4">Pour vos projets Artistiques</h3>
+        <a href="https://wa.me/2250709394171" class="btn btn-light btn-lg">Contactez-moi</a>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade project-modal" id="projectModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="" class="img-fluid rounded mb-3">
+                    <p class="project-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const artists = [
+            { name: "N'goran Sem", image: "images/GR4.jpg", category: "instrument", description: " batteur " },
+            { name: " Vases d'honneur de bingerville", image: "images/GR1.jpg", category: "group", description: " C'est un groupe de musique de bingerville" },
+            { name: "Kouadio Jacob", image: "images/GR7.jpg", category: "chant", description: "instrumentiste" },
+            { name: "Assawa Joas ", image: "images/GR3.jpg", category: "instrument", description: " Instrumentiste ivoirienne" },
+            { name: "Pierrette Adam's", image: "images/pierrette.jpg", category: "chant", description: "chateuse ivoirienne." },
+            { name: "Roland Boussou", image: "images/rollan bossou.jpg", category: "instrument", description: "Instrumentiste ivoirien." },
+            { name: "Chantre Boniface", image: "images/chantre-boniface.png", category: "chant", description: "Un chantre talentueux avec une voix unique." },
+            { name: "Dan Luiten", image: "images/danluiten.jpg", category: "chant", description: "Artiste de louange reconnu internationalement." },
+            { name: "Fusion Band", image: "images/fusion band.jpg", category: "group", description: "Groupe de musique dynamique mêlant différents styles." },
+            { name: "Joseph Moussio", image: "images/josephe moussio.jpeg", category: "chant", description: "Chantre de l'Éternel." },
+            { name: "Hamo's Ki-say", image: "images/ki say.jpeg", category: "chant", description: "chantre passionné aux texte profond." },
+            { name: "Maguy BRIGHT", image: "images/mado2.jpg", category: "chant", description: "voix authentique qui touche les cœurs." },
+            { name: "Marya Adé", image: "images/maria.jpg", category: "chant", description: "Une artiste à la présence scénique remarquable." },
+            { name: "Meiway", image: "images/MEiwey.jpeg", category: "chant", description: "Un style unique qui transcende les genres." },
+            { name: "Nestor David", image: "images/nestor.jpeg", category: "chant", description: "Chanteur talentueux au style divers." },
+            { name: "Sandra Kouamé", image: "images/sandra kouamé 2.jpg", category: "chant", description: "Une voix puissante qui inspire." },
+            { name: "Cynthia Zéli", image: "images/synthia ZELI.jpeg", category: "chant", description: "chantre de l'eternel ." },
+            { name: "Williams Sax", image: "images/williams saxe.jpg", category: "instrument", description: "Saxophoniste virtuose aux performances mémorables." }
+        ];
+
+        function displayProjects(category = 'all') {
+            const grid = document.getElementById('projectGrid');
+            grid.innerHTML = '';
+
+            artists.forEach(artist => {
+                if (category === 'all' || artist.category === category) {
+                    const card = document.createElement('div');
+                    card.className = 'project-card animate__animated animate__fadeIn';
+                    card.innerHTML = `
+                        <img src="${artist.image}" alt="${artist.name}">
+                        <h5>${artist.name}</h5>
+                    `;
+                    card.addEventListener('click', () => showModal(artist));
+                    grid.appendChild(card);
+                }
+            });
+        }
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                displayProjects(e.target.getAttribute('data-filter'));
+            });
+        });
+
+        function showModal(artist) {
+            const modal = new bootstrap.Modal(document.getElementById('projectModal'));
+            document.querySelector('.modal-title').textContent = artist.name;
+            document.querySelector('.modal-body img').src = artist.image;
+            document.querySelector('.project-description').textContent = artist.description;
+            modal.show();
+        }
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            displayProjects();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

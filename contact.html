@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>AS Musique</title>
+    <link rel="stylesheet" href="">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Core Theme CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: linear-gradient(120deg, #3b82f6, #9333ea);
+            animation: gradient-bg 6s infinite alternate;
+            color: white;
+        }
+
+        @keyframes gradient-bg {
+            0% {
+                background: linear-gradient(120deg, #3b82f6, #9333ea);
+            }
+            100% {
+                background: linear-gradient(120deg, #9333ea, #3b82f6);
+            }
+        }
+
+        .navbar {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+    background: linear-gradient(to right, blue, violet);
+    -webkit-background-clip: text; /* Pour Safari */
+    background-clip: text; /* Standard property */
+    -webkit-text-fill-color: transparent; /* Pour Safari */
+    transition: color 0.3s, transform 0.3s;
+        }
+
+        .navbar-brand:hover {
+            color: transparent; /* Rendre le texte transparent pour voir le dégradé */
+    -webkit-background-clip: text; /* Pour que le dégradé soit appliqué au texte */
+    background-clip: text; /* Pour que le dégradé soit appliqué au texte */}
+        
+    .navbar-nav .nav-link {
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(86, 86, 247), violet);
+    -webkit-background-clip: text; /* Pour Safari */
+    background-clip: text; /* Standard property */
+    -webkit-text-fill-color: transparent; /* Pour Safari */
+    transition: color 0.3s, transform 0.3s;
+}
+        .navbar-nav .nav-link:hover {
+    color: transparent; /* Rendre le texte transparent pour voir le dégradé */
+    -webkit-background-clip: text; /* Pour que le dégradé soit appliqué au texte */
+    background-clip: text; /* Pour que le dégradé soit appliqué au texte */
+    transform: scale(1.1);
+}
+
+        .social-icons {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 20px;
+            font-size: 100px;
+            color: white;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #7b00ffd6;
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.2);
+            position: fixed;
+            bottom: 0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Ahouah Koffi Séraphin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><strong>Accueil</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html"><strong>À propos</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artiste.html"><strong>Artistes</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><strong>Contact</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61560611412647&mibextid=ZbWKwL" target="_blank" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/ahouahseraphin/profilecard/?igsh=MWlwdjQzM3hvd2pmcw==" target="_blank" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@seraphin2903?_t=ZM-8sKqY0oXOnl&_r=1" target="_blank" aria-label="LinkedIn">
+            <i class="bi bi-tiktok"></i>
+        </a>
+        <a href="https://youtube.com/@seraphinahouah3661?si=-KGTyeybVWN3SlF7" target="_blank" aria-label="YouTube">
+            <i class="bi bi-youtube"></i>
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2024 Ahouah Seraphin. Tous droits réservés.
+    </footer>
+
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
